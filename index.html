@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="PL-pl">
 
 <head>
@@ -16,16 +16,16 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Brand logo i elementy nawigacji -->
   <header id="top">
-    <nav class="navbar navbar-expand-md navbar-dark bg-danger font-weight-bold">
-      <div class="container">
-        <a class="navbar-brand text-portfolio" href="#">Portfolio</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger font-weight-bold navitem-size">
+      <div class="container py-3">
+        <a class="navbar-brand branditem-size" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
     <span class="navbar-toggler-icon"></span>
   </button>
-
         <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto navitem-size">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -40,12 +40,15 @@
       </div>
     </nav>
   </header>
-
+  <!--  Główna sekcja strony-->
   <main class="text-center">
+    <!--   O Mnie  -->
     <div class="container bg-user mx-auto py-5" id="about">
       <div class="row">
         <div class="col-12 col-xl-8">
-          <p class="lead text-xl-right text-xs-center text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam dolores veniam corporis maiores. Optio tempore asperiores sapiente odio nulla illum ipsa odit laudantium. Illo vitae labore delectus omnis nulla? </p>
+         <div class="box">
+          <p class=" trans lead text-xl-right text-xs-center text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam dolores veniam corporis maiores. Optio tempore asperiores sapiente odio nulla illum ipsa odit laudantium. Illo vitae labore delectus omnis nulla? </p>
+          </div>
           <hr class="star-bright">
           <h4 class="text-danger mb-4">Junior Front-End Web Developer</h4>
         </div>
@@ -54,115 +57,115 @@
         </div>
       </div>
     </div>
+    <!--    Sekcja portfolio -->
     <div class="container jumbotron jumbotron-fluid bg-light mb-0" id="portfolio">
       <h1 class="text-uppercase text-danger">Portfolio</h1>
       <hr class="star-dark">
       <div class="row mx-4">
+        <!--       Galeria -->
         <div class="col-12 col-md-6 mb-4">
-          <div class="card">
-            <img class="img-fluid rounded images" src="img/counsel.jpg" alt="">
-          </div>
+
+          <a data-lightbox="gallery-id" href="img/first.jpg">
+            <img class="img-fluid" src="img/first.jpg" alt="">
+            </a>
+
         </div>
         <div class="col-12 col-md-6 mb-4">
-          <div class="card">
-            <a href="img/first.jpg" datatoggle="lightbox"><img class="img-fluid rounded images" src="img/first.jpg" alt="" ></a>
-          </div>
-        </div>
-      </div>
-      <div class="row mx-4">
-        <div class="col-12 col-md-6 mb-4">
-          <div class="card">
-            <img class="img-fluid rounded images" src="img/Jellyfish.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-md-6 mb-4">
-          <div class="card">
-            <img class="img-fluid rounded images" src="img/Koala.jpg" alt="">
-          </div>
+
+          <a data-lightbox="gallery-id" href="img/counsel.jpg">
+            <img class="img-fluid" src="img/counsel.jpg" alt="">
+            </a>
+
         </div>
       </div>
       <div class="row mx-4">
         <div class="col-12 col-md-6 mb-4">
-          <div class="card">
-            <img class="img-fluid rounded images" src="img/Lighthouse.jpg" alt="">
-          </div>
+
+          <a data-lightbox="gallery-id" href="img/Jellyfish.jpg">
+            <img class="img-fluid" src="img/Jellyfish.jpg" alt="">
+            </a>
+
         </div>
         <div class="col-12 col-md-6 mb-4">
-          <div class="card">
-            <img class="img-fluid rounded images" src="img/Penguins.jpg" alt="">
-          </div>
+
+          <a data-lightbox="gallery-id" href="img/Koala.jpg">
+            <img class="img-fluid" src="img/Koala.jpg" alt="">
+            </a>
+
+        </div>
+      </div>
+      <div class="row mx-4">
+        <div class="col-12 col-md-6 mb-4">
+
+          <a data-lightbox="gallery-id" href="img/Lighthouse.jpg">
+            <img class="img-fluid" src="img/Lighthouse.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+
+          <a data-lightbox="gallery-id" href="img/Penguins.jpg">
+            <img class="img-fluid" src="img/Penguins.jpg" alt="">
+            </a>
+
         </div>
       </div>
       <hr class="mt-5 border">
     </div>
+    <!--    sekcja kontakt -->
     <div class="container jumbotron jumbotron-fluid bg-light pt-0 mb-0" id="contact">
       <h1 class="text-uppercase text-danger">Contact Me</h1>
       <hr class="star-dark">
       <div class="row mx-4 mb-4">
+        <!--       Formularz -->
         <div class="col-12 col-md-6 mb-5">
           <form id="contactForm" class="">
             <div class="form-group">
-              
               <input type="text" class="form-ed" id="name" placeholder="Name" required>
             </div>
             <div class="form-group ">
-              
               <input type="text" class="form-ed" id="name" placeholder="Email Adress" required>
             </div>
             <div class="form-group ">
-              
               <input type="text" class="form-ed" id="name" placeholder="Phone Number" required>
             </div>
             <div class="form-group ">
-              
               <textarea id="message" class="form-ed" rows="5" placeholder="Massage" required></textarea>
             </div>
             <button type="submit" class="btn btn-lg btn-outline-success">Send Message</button>
           </form>
         </div>
+        <!--        Opis formularza i o mnie-->
         <div class="col-12 col-md-6 text-left">
-         <div class="vcenter">
-          <p class="lead form-message">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
-
-          <p class="lead pt-5">I promise to reply A.S.A.P.</p>
+          <div class="vcenter">
+            <p class="lead form-message">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
+            <p class="lead pt-5">I promise to reply A.S.A.P.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="sm-invisible scroll-top">
+    <!--    Sticky arrow do szybkiego scrollowania strony-->
+    <div class="scroll-top">
       <a href="#top" class="fa fa-2x fa-chevron-up sticky-arrow"></a>
     </div>
-
-    <div class="container mx-auto py-4 bg-danger">
-        <div class="col-12 col-md-6 text-center mx-auto">
-         <h2 class="text-uppercase text-width-bold mb-2 text-light">Useful links</h2>
-          <ul class="social">
-            <li class="d-inline p-1"><a href="#"><i class="fa fa-2x  fa-twitter"></i></a></li>
-            <li class="d-inline p-1"><a href="#"><i class="fa fa-2x  fa-facebook"></i></a></li>
-            <li class="d-inline p-1"><a href="#"><i class="fa fa-2x  fa-github"></i></a></li>
-            <li class="d-inline p-1"><a href="#"><i class="fa fa-2x  fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-    </div>
+    <!--    Uzyteczne linki / Social media -->
+    <div class="container py-4 bg-danger">
+        <h2 class="text-uppercase text-light ml-">Useful links</h2>
+        <ul class="social mt-3">
+          <li class="d-inline m-2"><a href="#bottom"><i class="fa fa-2x  fa-twitter"></i></a></li>
+          <li class="d-inline m-2"><a href="#bottom"><i class="fa fa-2x  fa-facebook"></i></a></li>
+          <li class="d-inline m-2"><a href="#bottom"><i class="fa fa-2x  fa-github"></i></a></li>
+          <li class="d-inline m-2"><a href="#bottom"><i class="fa fa-2x  fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+  
+    <!--    Stopka-->
     <footer>
-      <p id="bottom" class="lead text-center text-white py-3">Karol Kałkus &copy; 2018. All rights reserved</p>
+      <p id="bottom" class="lead text-center text-white py-3 mb-0 bg-user">Karol Kałkus &copy; 2018. All rights reserved</p>
     </footer>
   </main>
-
-  <script>
-    $('a[href^="#"]').on('click', function(event) {
-
-      var target = $(this.getAttribute('href'));
-
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 1000);
-      }
-
-    });
-  </script>
+  <script src="js/main.js"></script>
+  
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 body {
   background-color: #797979 !important;
 }
+/*body color  #797979*/
 
 #mypic {
   width: 250px;
@@ -8,6 +9,9 @@ body {
 
 img:hover {
   opacity: 0.9;
+}
+.picture{
+  width: 60%;
 }
 
 .vcenter {
@@ -22,7 +26,12 @@ img:hover {
   max-width: 512px;
   border-top: solid 7px;
 }
-
+.navitem-size{
+  font-size: 21px;
+}
+.branditem-size{
+  font-size: 35px !important;
+}
 .star-dark {
   border-color: #7e7e7e !important;
   margin: 40px auto 30px;
@@ -58,11 +67,11 @@ form{
 }
 
 .bg-user {
-  background-color: #d4d4d4 !important;
+  background-color: #2f2f2f !important;
 }
-
-.social {
+.social{
   list-style: none;
+  margin-right: 30px;
 }
 i {
   border-radius: 50%;
@@ -90,7 +99,7 @@ i:hover {
   height: 50px;
     text-align:center; 
     font-weight: bold;
-    color: #d9534f;
+    color: #D83C49;
     position:fixed;
     bottom:20px;
     right:20px;
@@ -107,5 +116,4 @@ i:hover {
   color: #D83C49 !important;
   background-color: white;
   border-color:gray;
-  
 }
